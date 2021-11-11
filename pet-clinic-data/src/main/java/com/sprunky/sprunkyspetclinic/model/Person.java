@@ -1,9 +1,17 @@
 package com.sprunky.sprunkyspetclinic.model;
 
 public class Person extends BaseEntity{
-
+    private Long Id;
     private String firstName;
     private String lastName;
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
+    }
 
     public String getFirstName() {
         return firstName;
