@@ -2,9 +2,11 @@ package com.sprunky.sprunkyspetclinic.services.map;
 
 import com.sprunky.sprunkyspetclinic.model.Pet;
 import com.sprunky.sprunkyspetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
     @Override
     public Set<Pet> findAll() {
