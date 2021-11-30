@@ -1,11 +1,11 @@
 package com.sprunky.sprunkyspetclinic.services.map;
 
 import com.sprunky.sprunkyspetclinic.model.Owner;
-import com.sprunky.sprunkyspetclinic.services.CrudService;
+import com.sprunky.sprunkyspetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
     @Override
     public Set<Owner> findAll() {
@@ -31,5 +31,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     public void delete(Owner object) {
         super.delete(object);
 
+    }
+
+    @Override
+    public Owner findByLastAName(String lastName) {
+        return null;
     }
 }

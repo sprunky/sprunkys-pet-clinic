@@ -1,11 +1,11 @@
 package com.sprunky.sprunkyspetclinic.services.map;
 
 import com.sprunky.sprunkyspetclinic.model.Vet;
-import com.sprunky.sprunkyspetclinic.services.CrudService;
+import com.sprunky.sprunkyspetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
